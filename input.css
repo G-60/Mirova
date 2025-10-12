@@ -1,0 +1,45 @@
+@import "tailwindcss";
+.text-gradient {
+  background: linear-gradient(270deg, oklch(21% 0.034 264.665), oklch(50% 0.034 264.665), oklch(70% 0.034 264.665));
+  background-size: 300% 300%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flowGradient 2s ease infinite;
+}
+
+@keyframes flowGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes amberFlow {
+  0% {
+    color: #fcd34d;
+  }
+  33% {
+    color: #f59e0b;
+  }
+  66% {
+    color: #b45309;
+  }
+  100% {
+    color: #fcd34d;
+  }
+}
+.flowing-text {
+  animation: amberFlow 3s linear infinite;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+footer div[class~="grid-cols-3"] img {
+  filter: invert(1);
+}
