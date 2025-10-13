@@ -10,29 +10,45 @@
     <link rel="stylesheet" href="output.css">
     <link rel="icon" href="assets/logo.svg">
 </head>
-
 <body class="bg-slate-50">
     <header>
-        <nav class="grid grid-cols-1 md:grid-cols-3 fixed w-full justify-between bg-slate-900 text-gray-50 z-10">
-            <h1 class="font-bold text-3xl m-3">Mirova</h1>
-            <ul class="flex col-span-2 gap-7 p-3">
-                <li class="inline-block underline-offset-4 hover:underline"><a href="#home" class="block p-2">Home</a>
-                </li>
-                <li class="inline-block underline-offset-4 hover:underline"><a href="#prodcuts"
-                        class="block p-2">Products</a></li>
-                <li class="inline-block underline-offset-4 hover:underline"><a href="#blogs" class="block p-2">Blogs</a>
-                </li>
-                <li class="inline-block underline-offset-4 hover:underline"><a href="#shots" class="block p-2">Shots</a>
-                </li>
-                <li class="inline-block underline-offset-4 hover:underline"><a href="#contact"
-                        class="block p-2">Contact</a></li>
-            </ul>
+        <nav class="fixed w-full border-gray-200 bg-slate-200 shadow-md dark:bg-gray-900 dark:border-gray-700 z-10">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Mirova</span>
+                </a>
+                <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                    <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                        <li>
+                            <a href="#home" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+                        </li>
+                        <li>
+                            <a href="#blogs" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#shots" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shots</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="pt-50" id="home">
+        <div class="flex justify-center p-25 sm:p-50" id="home">
             <div class="h-150 text-center">
                 <h2 class="text-5xl p-2 md:p-0 mb-10">Wear the Calm. Move with the <span
                         class="text-gradient">Flow.</span></h2>
-                <p class="font-light  py-3 md:py-20">Mirova creates timeless, sustainable apparel inspired by
+                <p class="font-light py-3 md:py-20 m-5">Mirova creates timeless, sustainable apparel inspired by
                     the balance between motion and stillness. Designed for those who live simply, move freely, and value
                     quality.</p>
                 <button
@@ -48,8 +64,8 @@
         </div>
     </header>
     <main>
-        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-gray-900 mt-10 mx-5" id="prodcuts">
-            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 ml-5 font-bold col-span-full">Featured
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-gray-900 mt-10 mx-5" id="products">
+            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 ml-0 sm:ml-5 font-bold col-span-full">Featured
                 Collection</h2>
             <div class="max-w-sm h-fit bg-white rounded-lg shadow-sm hover:shadow-xl dark:bg-slate-800">
                 <img class="rounded-t-lg" src="assets/pexels-anna-nekrashevich-8532616.webp"
@@ -112,7 +128,7 @@
             </div>
         </section>
         <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 mx-5 text-gray-900 gap-10" id="blogs">
-            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 ml-5 font-bold col-span-full">Newest Blogs
+            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 ml-0 sm:ml-5  font-bold col-span-full">Newest Blogs
             </h2>
             <article class="max-w-sm bg-white rounded-lg shadow-sm hover:shadow-xl dark:bg-slate-800">
                 <img class="rounded-t-lg" src="assets/brandon-atchison-ulWqxGT5ckQ-unsplash.webp"
@@ -179,7 +195,7 @@
             </article>
         </section>
         <section class="text-gray-900 mt-10 mx-5" id="shots">
-            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 m-5 font-bold col-span-full">Shots</h2>
+            <h2 class="text-3xl border-l-4 p-5 text-nowrap border-sky-400 ml-0 sm:ml-5 font-bold col-span-full">Shots</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
@@ -255,14 +271,14 @@
             </div>
         </section>
     </main>
-    <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-slate-800 text-slate-50 p-10 gap-15" id="contact">
+    <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-gray-300 text-gray-900 dark:bg-slate-800 dark:text-slate-50 p-10 gap-15" id="contact">
         <div id="about">
             <h2 class="text-3xl font-bold">About Us</h2>
-            <p class="text-slate-300 mt-5">Mirova is built on motion — from the streets to the shore. We blend minimal
+            <p class="text-gray-900 dark:text-slate-300 mt-5">Mirova is built on motion — from the streets to the shore. We blend minimal
                 design with bold energy, creating pieces made to move wherever life flows.</p>
             <h2 class="text-2xl mt-5 font-medium">Got a question, collab idea, or just wanna talk gear?</h2>
             <p class="text-slate-300 mb-5">We are always listening.</p>
-            <address class="text-slate-400">
+            <address class="text-gray-500 dark:text-slate-400">
                 Email: support@mirovawear.com<br>
                 Location: Amman, Jordan — Designed locally, worn worldwide.
             </address>
@@ -317,7 +333,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-span-full text-center text-slate-300">
+        <div class="col-span-full text-center text-slate-800 dark:text-slate-300">
             <p>© 2025 Mirova. All rights reserved. Designed for those who move with purpose.</p>
         </div>
         <div class="col-span-full border-t-1 border-slate-700 mt-5 flex justify-center">
@@ -330,12 +346,11 @@
                     alt="my linkedin">
             </a>
         </div>
-        <p class="text-center col-span-full text-slate-300"><strong>Disclaimer:</strong> This website was created for practice and educational purposes only.
+        <p class="text-center col-span-full text-slate-800 dark:text-slate-300"><strong>Disclaimer:</strong> This website was created for practice and educational purposes only.
         All products, brand names, and content displayed on this site are fictional and not intended for
         commercial use.
         Any resemblance to real businesses or entities is purely coincidental.
         No products or services are actually offered through this website.</p>
     </footer>
 </body>
-
 </html>
