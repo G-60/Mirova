@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import "tailwindcss";
+.style-script-regular {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@theme {
+  --font-stylescript: "Style Script", cursive;
+}
+@layer utilities {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 .text-gradient {
   background: linear-gradient(270deg, oklch(21% 0.034 264.665), oklch(50% 0.034 264.665), oklch(70% 0.034 264.665));
   background-size: 300% 300%;
@@ -37,7 +59,6 @@
   animation: amberFlow 3s linear infinite;
 }
 html {
-  scroll-behavior: smooth;
   scrollbar-width: thin;
 }
 footer div[class~="grid-cols-3"] img {
